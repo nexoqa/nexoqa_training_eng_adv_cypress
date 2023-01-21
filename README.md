@@ -38,3 +38,30 @@ docker-compose -f docker-compose-client.yaml up -d
 ``` bash
 docker-compose -f docker-compose-client.yaml down
 ```
+
+### Exercises
+
+[Cypress API docs](https://docs.cypress.io/api/)
+
+1. **Implement the following scenarios**
+   * Add a new song and validate is present on the home page
+   * Edit a new song and validate the changes are present on the home page
+   * Search any song
+     * Validate the case when the song has been created
+     * Validate the case when the song has not been created
+   * Implement the user registration
+   * Validate the user can login into the app
+   * The users can create a bookmark
+   * The users can check the songs' history  
+2. **Create commands to reuse flows**
+   * Create command to complete the registration flow
+   * Create command to complete the login flow
+   * Create command to add a new song
+   * Create command to edit a new song
+   * Create command to search a new song
+3. **Implement an interception to validate the UI without backend enabled**<br>**Starting only the front-end (Client)**, implement a router to return your own reponses to validate the UI behaviours.
+   Implemente the following scenarios:
+   * Add a new song and validate is present on the home page
+   * Edit a new song and validate the changes are present on the home page
+   * Implement the user registration
+   * Validate the user can login into the app
