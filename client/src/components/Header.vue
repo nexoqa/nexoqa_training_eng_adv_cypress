@@ -1,7 +1,8 @@
 <template>
   <v-toolbar fixed class="cyan" dark>
     <v-toolbar-title class="mr-4">
-      <router-link 
+      <router-link
+        id="btn-home"
         class="home"
         tag="span"
         :to="{
@@ -13,6 +14,7 @@
 
     <v-toolbar-items>
       <v-btn 
+        id="btn-browser"
         flat 
         dark
         :to="{
@@ -27,6 +29,7 @@
     <v-toolbar-items>
       <v-btn 
         v-if="!$store.state.isUserLoggedIn"
+        id="btn-login"
         flat 
         dark
         :to="{
@@ -37,6 +40,7 @@
       
       <v-btn 
         v-if="!$store.state.isUserLoggedIn"
+        id="btn-signup"
         flat 
         dark
         :to="{
@@ -47,6 +51,7 @@
       
       <v-btn 
         v-if="$store.state.isUserLoggedIn"
+        id="btn-logout"
         flat 
         dark
         @click="logout">

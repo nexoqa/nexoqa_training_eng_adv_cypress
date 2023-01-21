@@ -4,5 +4,7 @@
 output
 client/node_modules/
 server/node_modules/
+cypress/screenshots
+cypress/videos
 *.iml
 .DS_Store
