@@ -15,6 +15,11 @@ You must at least have **NODE version 16.13.2**
 
 To navigate the SQLite DB, you can use an application such as [THIS](https://sqlitebrowser.org/dl/) one
 
+### Install cypress
+```
+npm install cypress --save-dev
+```
+
 ### Start Server and Client
 
 ``` bash
